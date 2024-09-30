@@ -1,10 +1,12 @@
 const record = [
-    { year: "2015", result: "W"},
-    { year: "2014", result: "N/A"},
-    { year: "2013", result: "L"},
-    //...
-  ]
- function superbowlWin(record) {
-    const win=record.find(entry=>entry.year==="W")
-    return win? win.year:undefined;
-  };
+  { year: "2015", result: "W" },
+  { year: "2014", result: "N/A" },
+  { year: "2013", result: "L" },
+  //...
+]
+function superbowlWin(record) {
+  const win = record.find(entry => entry.result === "W")
+  return win ? win.year : undefined;
+};
+
+
